@@ -1,1 +1,18 @@
 @charset "utf-8";
+
+/* Mobile first Layout */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+header,
+footer {
+    background-color: #f8f9fa;
+}
