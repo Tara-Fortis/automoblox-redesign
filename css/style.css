@@ -16,3 +16,10 @@ header,
 footer {
     background-color: #f8f9fa;
 }
+
+footer {
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
