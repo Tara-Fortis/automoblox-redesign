@@ -12,20 +12,61 @@
 <body>
     <div id="header"></div>
     <main>
-        <div class="container-fluid">
+        <div class="container-sm">
             <h1>Gallery</h1>
-            <div id="carouselAutoPlay" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselAutoPlay" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <figure class="carousel-item active">
-                        <img src="https://placehold.co/510x300" class="d-block w-100" alt="placehold">
+                        <div class="card p-4 bg-secondary">
+                            <img src="images/a9s_large.jpg" class="card-img-top" alt="a9s">
+                            <figcaption class="card-body">
+                                <h5 class="card-title text-white">A9S</h5>
+                                <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat.</p>
+                            </figcaption>
+                        </div>
                     </figure>
                     <figure class="carousel-item">
-                        <img src="https://placehold.co/510x300" class="d-block w-100" alt="placehold">
+                        <div class="card p-4 bg-secondary">
+                            <img src="images/a9_large.jpg" class="card-img-top" alt="a9">
+                            <figcaption class="card-body">
+                                <h5 class="card-title text-white">A9</h5>
+                                <p class="card-text text-white">Excepteur sint occaecat cupidatat, sunt in culpa qui
+                                    officia deserunt mollit.</p>
+                            </figcaption>
+                        </div>
                     </figure>
                     <figure class="carousel-item">
-                        <img src="https://placehold.co/510x300" class="d-block w-100" alt="placehold">
+                        <div class="card p-4 bg-secondary">
+                            <img src="images/c9_large.jpg" class="card-img-top" alt="c9">
+                            <figcaption class="card-body">
+                                <h5 class="card-title text-white">C9</h5>
+                                <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet, ad minim.</p>
+                            </figcaption>
+                        </div>
                     </figure>
-                </div>
+                    <figure class="carousel-item">
+                        <div class="card p-4 bg-secondary">
+                            <img src="images/c9r_large.jpg" class="card-img-top" alt="c9r">
+                            <figcaption class="card-body ">
+                                <h5 class="card-title text-white">C9R</h5>
+                                <p class="card-text text-white">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip.
+                                </p>
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="carousel-item">
+                        <div class="card p-4 bg-secondary">
+                            <img src="images/c9s_large.jpg" class="card-img-top" alt="c9s">
+                            <figcaption class="card-body">
+                                <h5 class="card-title text-white">C9S</h5>
+                                <p class="card-text text-white">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, nisi ut aliquip.
+                                </p>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div><!-- .carousel-inner -->
                 <!-- Carousel Indicators -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoPlay"
                     data-bs-slide="prev">
@@ -37,7 +78,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button><!-- .carousel-indicators -->
-            </div>
+            </div><!-- .carousel -->
         </div>
     </main>
     <div id="footer"></div>

@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+// Bootstrap imports
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Automoblox Utilities
+:root {
+  --automoblox-red: #C8102E;
+  --automoblox-black: #000000;
+  --automoblox-gray: #F2F2F2;
+  --automoblox-dark-gray: #333333;
+}
+
+// Automoblox Palette
+$primary: #C8102E; // Automoblox red
+$secondary: #333333; // dark gray
+$light: #F2F2F2; // neutral gray
+$dark: #000000; // black
+
+$body-bg: $light;
+$body-color: $secondary;
+
+// Automoblox Typography
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 700;
+
+// Font Sizes
+$font-size-base: 1rem;
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.875rem;
+$h6-font-size: 0.75rem;
+
+// Buttons
+.btn-automoblox {
+  @include button-variant($primary, $white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.btn-automoblox-outline {
+  @include button-outline-variant($primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  color: $dark;
+}
+
+// Utility classes
+.text-automoblox-red   { color: var(--automoblox-red) !important; }
+.text-automoblox-black { color: var(--automoblox-black) !important; }
+.text-automoblox-dark  { color: var(--automoblox-dark-gray) !important; }
+
+.bg-automoblox-red     { background-color: var(--automoblox-red) !important; }
+.bg-automoblox-gray    { background-color: var(--automoblox-gray) !important; }
+.bg-automoblox-black   { background-color: var(--automoblox-black) !important; }
+
+// Layout variables
+$header-height: 40px;
+$header-bg: #f8f9fa;
+
+// Layout
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+// Header and Footer
+header,
+footer {
+  background-color: $header-bg;
+}
+
+#header {
+  height: $header-height;
+  background-color: $header-bg;
+}
+
+footer {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Container
+.container-sm {
+  max-width: 80%;
+}
+
+// Side Bar
+#side-bar {
+  height: calc(100vh - #{$header-height});
+  overflow-y: auto;
+
+  .nav-link {
+    &.active {
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+}

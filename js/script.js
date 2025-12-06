@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // carousel
 const myCarouselElement = document.querySelector('#carouselAutoPlay')
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 2000,
+    interval: 4000,
     touch: false
 });
