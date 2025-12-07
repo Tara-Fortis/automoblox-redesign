@@ -3,7 +3,7 @@
 **Made by:** Tineil Armstrong
 **Course:** COMP 2081 Advanced Interface Desgin
 
-(Vist the live site)[]
+[Vist the live site](https://tara-fortis.github.io/automoblox-redesign/)
 ## Overview
 This project is a redesign of the Automoblox website, created as a part of the COMP2081 course. It demonstates CSS-based layout, interactive, and typographic techniques covered in class
 
