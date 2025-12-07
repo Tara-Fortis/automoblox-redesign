@@ -16,21 +16,21 @@ function loadHTML(id, file, callback) {
 
 document.addEventListener("DOMContentLoaded", () => {
     loadHTML("footer", "partials/footer.html");
-    loadHTML("header", "partials/header.html", setActiveNavLink);
+    loadHTML("header", "partials/header.html") //, setActiveNavLink);
 });
 
-// active navigation links
-function setActiveNavLink() {
-    const currentPath = window.location.pathname.split("/").pop();
-    document.querySelectorAll(".nav-link").forEach(link => {
-        const linkPath = link.getAttribute("href").split("/").pop();
-        if (linkPath === currentPath) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    });
-}
+// // active navigation links
+// function setActiveNavLink() {
+//     const currentPath = window.location.pathname.split("/").pop();
+//     document.querySelectorAll(".nav-link").forEach(link => {
+//         const linkPath = link.getAttribute("href").split("/").pop();
+//         if (linkPath === currentPath) {
+//             link.classList.add("active");
+//         } else {
+//             link.classList.remove("active");
+//         }
+//     });
+// }
 
 
 // carousel
