@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Automoblox Utilities
 :root {
@@ -18,8 +19,8 @@ $body-bg: $light;
 $body-color: $secondary;
 
 // Automoblox Typography
-$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$headings-font-family: 'Oswald', sans-serif;
+$font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Bebas Neue', sans-serif;
 $headings-font-weight: 700;
 
 // Font Sizes
@@ -31,6 +32,9 @@ $h4-font-size: 1rem;
 $h5-font-size: 0.875rem;
 $h6-font-size: 0.75rem;
 
+// Layout variables
+$header-height: 40px;
+$header-bg: #f8f9fa;
 // Bootstrap imports
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -86,9 +90,6 @@ h1 {
     background-color: var(--automoblox-black);
 }
 
-// Layout variables
-$header-height: 40px;
-$header-bg: #f8f9fa;
 
 // Layout
 body {
@@ -110,16 +111,19 @@ footer {
 
 header {
     box-shadow: 0px 1px 8px 0px #A2A2A2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: $header-bg;
 }
 
 footer {
     box-shadow: 0px -2px 8px 0px rgba(162, 162, 162, 0.5);
 }
 
-#header {
-    height: $header-height;
-    background-color: $header-bg;
-}
+
 
 // navbar
 .navbar .nav-link {
